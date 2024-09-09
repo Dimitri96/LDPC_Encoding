@@ -44,6 +44,7 @@ ARM RAL: Copy pa_test.cpp to ral-armral-24.07/test/UpperPHY/LDPC/Encoding/
 
 Step 4. Create a Build Directory
 After adding the LDPC encoder codes, create a build directory that will hold and build all four projects using the provided CMake configuration in this repository.
+      
       1. Create a new directory for building:
             mkdir build
          
@@ -69,8 +70,9 @@ This will build and execute all the LDPC encoder functions added to each of the 
 Step 6. Compare the Results
 
 Once all LDPC codes have been run, modify and execute the comparison scripts to compare the results of the four projects:
-1. compare.py, to see if the encoded files are all the same 
-2. time.py, to see which of the four implementations is the fastest
-Open the compare.py and time.py files and update the paths to the result files stored in the output/ directory.
+Open the compare.py and time.py files and update the paths to the result files stored in the output/ directory. 
+  1. compare.py, to see if the encoded files are all the same 
+  2. time.py, to see which of the four implementations is the fastest
+
 
 
