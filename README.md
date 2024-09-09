@@ -1,6 +1,6 @@
 LDPC Encoding Combined Project:
 
-This repository is a combination of four projects that have been nodified to include a custom LDPC encoding function. 
+This repository is a combination of four projects that have been modified to include a custom LDPC encoding function. 
 This repository includes the LDPC encdoding codes, the modified CMakeLists and a CMake build system to handle all four projects. 
 The following projects are combined in this repository:
 
