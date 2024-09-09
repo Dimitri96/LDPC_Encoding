@@ -12,9 +12,12 @@ The following projects are combined in this repository:
 A custom LDPC encoding code and a custom CMake file has been added to each of the four projects in the following paths:
 1.srsRAN_4G: srsRAN_4G/lib/src/phy/fec/ldpc/test/PA_ldpc_encoder.c
              srsRAN_4G/lib/src/phy/fec/ldpc/test/CMakeLists.txt
+             
 2.srsRAN_Project: srsRAN_Project/tests/benchmarks/phy/upper/channel_coding/ldpc/pa_ldpc_encoder.cpp
                   srsRAN_Project/tests/benchmarks/phy/upper/channel_coding/ldpc/CMakeLists.txt
+                  
 3.py3gpp: py3gpp/tests/PA_ldpc_encoder.py
+
 4.ARM RAL: ral-armral-24.07/test/UpperPHY/LDPC/Encoding/pa_test.cpp
            ral-armral-24.07/CMakeLists.txt
 
