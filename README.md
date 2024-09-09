@@ -23,39 +23,39 @@ A custom LDPC encoding code and a custom CMake file has been added to each of th
 
 To use the LDPC encoding codes, follow these steps:
 
-1. Clone the Four Projects
+Step 1. Clone the Four Projects
 You need to clone all four original repositories first:
 git clone https://github.com/srsran/srsRAN_4G.git
 git clone https://github.com/srsran/srsRAN_Project.git
 git clone https://github.com/catkira/py3gpp.git
 
-2. Build the Projects
+Step 2. Build the Projects
 Follow the individual build steps for each project:
 For srsRAN_4G and srsRAN_Project, follow their respective build instructions found in their README files.
 For py3gpp, make sure to install all necessary dependencies and follow its build steps.
 For ARM RAL, follow the provided documentation on the ARM website: https://developer.arm.com/documentation/102249/2407/Tutorials/Get-started-with-Arm-RAN-Acceleration-Library--ArmRAL-
 
-3. Add the LDPC Encoding Code
+Step 3. Add the LDPC Encoding Code
 After building each of the projects, copy the provided LDPC encoder code files from this repository to the corresponding paths:
 srsRAN_4G: Copy PA_ldpc_encoder.c to srsRAN_4G/lib/src/phy/fec/ldpc/test/
 srsRAN_Project: Copy pa_ldpc_encoder.cpp to srsRAN_Project/tests/benchmarks/phy/upper/channel_coding/ldpc/
 py3gpp: Copy PA_ldpc_encoder.py to py3gpp/tests/
 ARM RAL: Copy pa_test.cpp to ral-armral-24.07/test/UpperPHY/LDPC/Encoding/
 
-4. Create a Build Directory
+Step 4. Create a Build Directory
 After adding the LDPC encoder codes, create a build directory that will hold and build all four projects using the provided CMake configuration in this repository.
       1. Create a new directory for building:
             mkdir build
          
             cd build
          
-      3. Create a Output directory to hold the results (encoded files + benchmark results)
+      3. Create an Output directory to hold the results (encoded files + benchmark results):
             mkdir output
          
       5. Run the CMake command to configure the build. You need to specify the input and output directories:
             cmake -DOUTPUT_DIR=input_file_directory -DINPUT_FILE_PATH=input_file_path -DOUTPUT_FILE_PATH=output_directory ..
 
-5. Compile and Run
+Step 5. Compile and Run
 Once the CMake configuration is complete, compile and run the entire project:
 
       1. Compile the project using:
@@ -66,7 +66,7 @@ Once the CMake configuration is complete, compile and run the entire project:
          
 This will build and execute all the LDPC encoder functions added to each of the four projects.
 
-6. Compare the Results
+Step 6. Compare the Results
 
 Once all LDPC codes have been run, modify and execute the comparison scripts to compare the results of the four projects:
 1. compare.py, to see if the encoded files are all the same 
