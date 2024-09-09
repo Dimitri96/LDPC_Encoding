@@ -45,15 +45,14 @@ ARM RAL: Copy pa_test.cpp to ral-armral-24.07/test/UpperPHY/LDPC/Encoding/
 Step 4. Create a Build Directory
 After adding the LDPC encoder codes, create a build directory that will hold and build all four projects using the provided CMake configuration in this repository.
       
-      1. Create a new directory for building:
+      1. Create a new directory for building and for the output files to store in:
             mkdir build
+
+            mkdir output
          
             cd build
          
-      3. Create an Output directory to hold the results (encoded files + benchmark results):
-            mkdir output
-         
-      5. Run the CMake command to configure the build. You need to specify the input and output directories:
+      2. Run the CMake command to configure the build. You need to specify the input and output directories:
             cmake -DOUTPUT_DIR=input_file_directory -DINPUT_FILE_PATH=input_file_path -DOUTPUT_FILE_PATH=output_directory ..
 
 Step 5. Compile and Run
