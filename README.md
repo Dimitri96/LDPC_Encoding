@@ -61,7 +61,7 @@ Once the CMake configuration is complete, compile and run the entire project:
       1. Compile the project using:
                make -j $(nproc)
          
-      3. Run all the programs with:
+      2. Run all the programs with:
                make run_all_programs
          
 This will build and execute all the LDPC encoder functions added to each of the four projects.
