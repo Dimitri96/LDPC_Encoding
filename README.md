@@ -46,10 +46,13 @@ ARM RAL: Copy pa_test.cpp to ral-armral-24.07/test/UpperPHY/LDPC/Encoding/
 After adding the LDPC encoder codes, create a build directory that will hold and build all four projects using the provided CMake configuration in this repository.
       1. Create a new directory for building:
             mkdir build
+         
             cd build
-      2. Create a Output directory to hold the results (encoded files + benchmark results)
+         
+      3. Create a Output directory to hold the results (encoded files + benchmark results)
             mkdir output
-      4. Run the CMake command to configure the build. You need to specify the input and output directories:
+         
+      5. Run the CMake command to configure the build. You need to specify the input and output directories:
             cmake -DOUTPUT_DIR=input_file_directory -DINPUT_FILE_PATH=input_file_path -DOUTPUT_FILE_PATH=output_directory ..
 
 5. Compile and Run
@@ -57,11 +60,13 @@ Once the CMake configuration is complete, compile and run the entire project:
 
       1. Compile the project using:
                make -j $(nproc)
-      2. Run all the programs with:
+         
+      3. Run all the programs with:
                make run_all_programs
+         
 This will build and execute all the LDPC encoder functions added to each of the four projects.
 
-6. 7. Compare the Results
+6. Compare the Results
 
 Once all LDPC codes have been run, modify and execute the comparison scripts to compare the results of the four projects:
 1. compare.py, to see if the encoded files are all the same 
